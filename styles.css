@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+:root {
+  --box-shadow: rgba(0, 0, 0, 0.16) 1px 1px 4px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+
+.outer_wrap {
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  width: 100%;
+  padding: 30px;
+}
+
+.inner_wrap {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.heading {
+  text-align: center;
+  padding: 30px;
+}
+
+.heading .title {
+  font-size: 30px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.heading .subtitle {
+  font-size: 20px;
+  font-weight: 200;
+  color: #000000;
+}
+
+.create {
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  border: 1px solid #cfd6e2;
+}
+
+.create .add {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.create form .url {
+  flex-grow: 1;
+}
+
+.create form.add input,
+.create form.add select {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 7px;
+  border: 1px solid #d1d1d1;
+  font-size: 14px;
+}
+
+.create .add .submit {
+  border: 0;
+  background-color: #2666cf;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .create .add {
+    flex-direction: column;
+  }
+
+  .card {
+    flex-grow: 1;
+  }
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.category-list span {
+  border-radius: 3px;
+  box-shadow: var(--box-shadow);
+  padding: 10px;
+  margin: 5px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.category-list span:hover {
+  background-color: #eaebef;
+  color: white;
+}
+
+.category-list .active {
+  background-color: #0d479a !important;
+  color: #ffffff;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 25px 0px;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  background-color: #ffffff;
+  margin: 7px 0px;
+  padding: 10px;
+  width: 300px;
+}
+
+.card .options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.card .options p {
+  flex-grow: 1;
+}
+
+.card .options p span {
+  color: #ffffff;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.card .options div i {
+  font-size: 18px;
+  margin: 3px;
+}
+
+.youtube {
+  background-color: #595d5d;
+}
+.netflix {
+  background-color: #f71340;
+}
+.prime {
+  background-color: #0989ec;
+}
+.other {
+  background-color: #f7b113;
+}
+
+.card .options div .google {
+  color: #2666cf;
+}
+
+.card .options div .delete {
+  color: #eb596e;
+  cursor: pointer;
+}
+
+.card .options div .redirect {
+  color: #393e46;
+}

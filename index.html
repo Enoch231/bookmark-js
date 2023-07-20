@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>NotNotion</title>
+  </head>
+  <body>
+    <main>
+      <section class="outer_wrap">
+        <section class="inner_wrap">
+          <div class="heading">
+            <p class="title">notNotion</p>
+            <p class="subtitle">Your Custom Bookmark Manager</p>
+          </div>
+
+          <section class="create">
+            <form class="add">
+              <input
+                class="url"
+                type="text"
+                name="url"
+                placeholder="Link"
+                autocomplete="off"
+              />
+              <input
+                class="topic"
+                type="text"
+                name="topic"
+                placeholder="Title"
+                autocomplete="off"
+                maxlength="35"
+              />
+              <select name="channels" class="channels">
+                <option value="Youtube">Youtube</option>
+                <option value="Prime">Prime</option>
+                <option value="Netflix">Netflix</option>
+                <option value="Other">Other</option>
+              </select>
+              <input
+                class="submit"
+                type="submit"
+                name="Bookmark"
+                value="Bookmark"
+              />
+            </form>
+          </section>
+
+          <section class="bookmark">
+            <div class="category-list">
+              <span class="active">All</span>
+              <span>Youtube</span>
+              <span>Netflix</span>
+              <span>Prime</span>
+              <span>Other</span>
+            </div>
+            <section class="cards"></section>
+          </section>
+        </section>
+      </section>
+    </main>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
